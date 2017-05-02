@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E60D69F-D3FF-411E-B45C-2C0EBBFAC435}</ProjectGuid>
+    <ProjectGuid>{2D371EAF-3B41-4F8C-8F40-FD0D557E5949}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TFMiniWonJangServer</RootNamespace>

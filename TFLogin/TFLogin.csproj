@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{52B2D2EE-4DF9-4FFA-8CF9-46C8AD16828B}</ProjectGuid>
+    <ProjectGuid>{A035DBC4-FA05-45A9-971E-E080875230B4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProtoTypeFM</RootNamespace>
-    <AssemblyName>ProtoTypeFM</AssemblyName>
+    <RootNamespace>TFLogin</RootNamespace>
+    <AssemblyName>TFLogin</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormTFAsset.cs">
+    <Compile Include="FormTFLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTFAsset.Designer.cs">
-      <DependentUpon>FormTFAsset.cs</DependentUpon>
+    <Compile Include="FormTFLogin.Designer.cs">
+      <DependentUpon>FormTFLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormTFAsset.resx">
-      <DependentUpon>FormTFAsset.cs</DependentUpon>
+    <EmbeddedResource Include="FormTFLogin.resx">
+      <DependentUpon>FormTFLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

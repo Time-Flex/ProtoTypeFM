@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6D93D09-CE0A-4E98-AE8F-8EE68FADC5B9}</ProjectGuid>
+    <ProjectGuid>{5624D2AF-3180-449A-9F58-790157D9C1D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TFDataServer</RootNamespace>

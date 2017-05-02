@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77A5E70E-A3B2-45B9-97F6-88B6E8C4EE6E}</ProjectGuid>
+    <ProjectGuid>{58C5FC68-2F1C-4924-BFC9-A92D20EE7D78}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TFOrderServer</RootNamespace>

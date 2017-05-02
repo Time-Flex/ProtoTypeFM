@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProtoTypeFM
+namespace TFLogin
 {
-    public partial class FormTFAsset : Form
+    public partial class FormTFLogin : Form
     {
-        public FormTFAsset()
+        public FormTFLogin()
         {
             InitializeComponent();
         }

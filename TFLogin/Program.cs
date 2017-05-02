@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProtoTypeFM
+namespace TFLogin
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ProtoTypeFM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTFAsset());
+            Application.Run(new FormTFLogin());
         }
     }
 }

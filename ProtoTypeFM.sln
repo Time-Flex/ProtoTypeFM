@@ -3,17 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoTypeFM", "ProtoTypeFM\ProtoTypeFM.csproj", "{52B2D2EE-4DF9-4FFA-8CF9-46C8AD16828B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFClient", "TFClient\TFClient.csproj", "{A2C3A30D-DE99-40A9-A113-F8C756C732D9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFMainServer", "TFMainServer\TFMainServer.csproj", "{A161DD01-C416-42EB-8D09-AD2C8C40B865}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFMiniWonJangServer", "TFMiniWonJangServer\TFMiniWonJangServer.csproj", "{8E60D69F-D3FF-411E-B45C-2C0EBBFAC435}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFOrderServer", "TFOrderServer\TFOrderServer.csproj", "{77A5E70E-A3B2-45B9-97F6-88B6E8C4EE6E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFDataServer", "TFDataServer\TFDataServer.csproj", "{A6D93D09-CE0A-4E98-AE8F-8EE68FADC5B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFLogin", "TFLogin\TFLogin.csproj", "{A035DBC4-FA05-45A9-971E-E080875230B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,30 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52B2D2EE-4DF9-4FFA-8CF9-46C8AD16828B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52B2D2EE-4DF9-4FFA-8CF9-46C8AD16828B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52B2D2EE-4DF9-4FFA-8CF9-46C8AD16828B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52B2D2EE-4DF9-4FFA-8CF9-46C8AD16828B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2C3A30D-DE99-40A9-A113-F8C756C732D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2C3A30D-DE99-40A9-A113-F8C756C732D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2C3A30D-DE99-40A9-A113-F8C756C732D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2C3A30D-DE99-40A9-A113-F8C756C732D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A161DD01-C416-42EB-8D09-AD2C8C40B865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A161DD01-C416-42EB-8D09-AD2C8C40B865}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A161DD01-C416-42EB-8D09-AD2C8C40B865}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A161DD01-C416-42EB-8D09-AD2C8C40B865}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E60D69F-D3FF-411E-B45C-2C0EBBFAC435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E60D69F-D3FF-411E-B45C-2C0EBBFAC435}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E60D69F-D3FF-411E-B45C-2C0EBBFAC435}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E60D69F-D3FF-411E-B45C-2C0EBBFAC435}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77A5E70E-A3B2-45B9-97F6-88B6E8C4EE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77A5E70E-A3B2-45B9-97F6-88B6E8C4EE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77A5E70E-A3B2-45B9-97F6-88B6E8C4EE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77A5E70E-A3B2-45B9-97F6-88B6E8C4EE6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6D93D09-CE0A-4E98-AE8F-8EE68FADC5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6D93D09-CE0A-4E98-AE8F-8EE68FADC5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6D93D09-CE0A-4E98-AE8F-8EE68FADC5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6D93D09-CE0A-4E98-AE8F-8EE68FADC5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A035DBC4-FA05-45A9-971E-E080875230B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A035DBC4-FA05-45A9-971E-E080875230B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A035DBC4-FA05-45A9-971E-E080875230B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A035DBC4-FA05-45A9-971E-E080875230B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TFClient
 {
-    public partial class FormRiskManager : Form
+    public partial class Form1 : Form
     {
-        public FormRiskManager()
+        public Form1()
         {
             InitializeComponent();
         }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProtoTypeFM.Properties
+namespace TFLogin.Properties
 {
 
 

@@ -1,6 +1,6 @@
 ﻿namespace TFClient
 {
-    partial class FormFundManager
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FormMenu
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 581);
-            this.MaximizeBox = false;
-            this.Name = "FormMenu";
             this.Text = "Form1";
-            this.ResumeLayout(false);
-
         }
 
         #endregion

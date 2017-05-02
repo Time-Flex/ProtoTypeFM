@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2C3A30D-DE99-40A9-A113-F8C756C732D9}</ProjectGuid>
+    <ProjectGuid>{8CD0C13A-9E9A-4D7B-B2C7-BB6823C8CEC5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TFClient</RootNamespace>
@@ -46,26 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormFundManager.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFundManager.Designer.cs">
-      <DependentUpon>FormFundManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormRiskManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRiskManager.Designer.cs">
-      <DependentUpon>FormRiskManager.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormFundManager.resx">
-      <DependentUpon>FormFundManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormRiskManager.resx">
-      <DependentUpon>FormRiskManager.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
