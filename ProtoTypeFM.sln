@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFLogin", "TFLogin\TFLogin.csproj", "{A035DBC4-FA05-45A9-971E-E080875230B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFClient", "TFClient\TFClient.csproj", "{8CD0C13A-9E9A-4D7B-B2C7-BB6823C8CEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFMainServer", "TFMainServer\TFMainServer.csproj", "{2AF998E1-A3BE-4A1A-8651-C1C5D6A0AEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFMiniWonJangServer", "TFMiniWonJangServer\TFMiniWonJangServer.csproj", "{2D371EAF-3B41-4F8C-8F40-FD0D557E5949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFDataServer", "TFDataServer\TFDataServer.csproj", "{5624D2AF-3180-449A-9F58-790157D9C1D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFOrderServer", "TFOrderServer\TFOrderServer.csproj", "{58C5FC68-2F1C-4924-BFC9-A92D20EE7D78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{A035DBC4-FA05-45A9-971E-E080875230B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A035DBC4-FA05-45A9-971E-E080875230B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A035DBC4-FA05-45A9-971E-E080875230B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD0C13A-9E9A-4D7B-B2C7-BB6823C8CEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD0C13A-9E9A-4D7B-B2C7-BB6823C8CEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD0C13A-9E9A-4D7B-B2C7-BB6823C8CEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD0C13A-9E9A-4D7B-B2C7-BB6823C8CEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF998E1-A3BE-4A1A-8651-C1C5D6A0AEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF998E1-A3BE-4A1A-8651-C1C5D6A0AEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF998E1-A3BE-4A1A-8651-C1C5D6A0AEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF998E1-A3BE-4A1A-8651-C1C5D6A0AEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D371EAF-3B41-4F8C-8F40-FD0D557E5949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D371EAF-3B41-4F8C-8F40-FD0D557E5949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D371EAF-3B41-4F8C-8F40-FD0D557E5949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D371EAF-3B41-4F8C-8F40-FD0D557E5949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5624D2AF-3180-449A-9F58-790157D9C1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5624D2AF-3180-449A-9F58-790157D9C1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5624D2AF-3180-449A-9F58-790157D9C1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5624D2AF-3180-449A-9F58-790157D9C1D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C5FC68-2F1C-4924-BFC9-A92D20EE7D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C5FC68-2F1C-4924-BFC9-A92D20EE7D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C5FC68-2F1C-4924-BFC9-A92D20EE7D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C5FC68-2F1C-4924-BFC9-A92D20EE7D78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
