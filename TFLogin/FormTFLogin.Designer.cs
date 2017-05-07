@@ -44,7 +44,7 @@
             this.rbtnFundManager.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnFundManager.BackColor = System.Drawing.Color.DimGray;
             this.rbtnFundManager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rbtnFundManager.Font = new System.Drawing.Font("NanumGothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rbtnFundManager.Font = new System.Drawing.Font("나눔고딕", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rbtnFundManager.ForeColor = System.Drawing.Color.White;
             this.rbtnFundManager.Location = new System.Drawing.Point(18, 36);
             this.rbtnFundManager.Name = "rbtnFundManager";
@@ -60,7 +60,7 @@
             this.rbtnRiskManager.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnRiskManager.BackColor = System.Drawing.Color.DimGray;
             this.rbtnRiskManager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rbtnRiskManager.Font = new System.Drawing.Font("NanumGothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rbtnRiskManager.Font = new System.Drawing.Font("나눔고딕", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rbtnRiskManager.ForeColor = System.Drawing.Color.White;
             this.rbtnRiskManager.Location = new System.Drawing.Point(18, 97);
             this.rbtnRiskManager.Name = "rbtnRiskManager";
@@ -88,13 +88,14 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Gulim", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnLogin.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogin.Location = new System.Drawing.Point(187, 109);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 38);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // checkBox1
             // 
@@ -112,7 +113,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Gulim", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 6);
             this.label1.Name = "label1";
@@ -124,7 +125,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("HYGothic-Extra", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnExit.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnExit.Location = new System.Drawing.Point(264, -3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(20, 20);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TFClient
 {
-    public partial class Form1 : Form
+    public partial class FormFMBalance : Form
     {
-        public Form1()
+        public FormFMBalance()
         {
             InitializeComponent();
         }
