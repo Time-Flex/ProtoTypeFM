@@ -29,5 +29,17 @@ namespace TFClient
                 panel2.Visible = true;
             }
         }
+
+        private void btnFMBalance_Click(object sender, EventArgs e)
+        {
+            FormFMBalance form = new FormFMBalance();
+            form.Show();
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            FormOrder form = new FormOrder();
+            form.Show();
+        }
     }
 }
