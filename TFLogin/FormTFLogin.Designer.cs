@@ -37,6 +37,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.rbtnPortManager = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // rbtnFundManager
@@ -44,11 +45,11 @@
             this.rbtnFundManager.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnFundManager.BackColor = System.Drawing.Color.DimGray;
             this.rbtnFundManager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rbtnFundManager.Font = new System.Drawing.Font("나눔고딕", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rbtnFundManager.Font = new System.Drawing.Font("NanumGothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rbtnFundManager.ForeColor = System.Drawing.Color.White;
-            this.rbtnFundManager.Location = new System.Drawing.Point(18, 36);
+            this.rbtnFundManager.Location = new System.Drawing.Point(18, 69);
             this.rbtnFundManager.Name = "rbtnFundManager";
-            this.rbtnFundManager.Size = new System.Drawing.Size(125, 50);
+            this.rbtnFundManager.Size = new System.Drawing.Size(125, 38);
             this.rbtnFundManager.TabIndex = 0;
             this.rbtnFundManager.Text = "펀드매니저";
             this.rbtnFundManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,11 +61,11 @@
             this.rbtnRiskManager.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbtnRiskManager.BackColor = System.Drawing.Color.DimGray;
             this.rbtnRiskManager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rbtnRiskManager.Font = new System.Drawing.Font("나눔고딕", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rbtnRiskManager.Font = new System.Drawing.Font("NanumGothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rbtnRiskManager.ForeColor = System.Drawing.Color.White;
-            this.rbtnRiskManager.Location = new System.Drawing.Point(18, 97);
+            this.rbtnRiskManager.Location = new System.Drawing.Point(18, 109);
             this.rbtnRiskManager.Name = "rbtnRiskManager";
-            this.rbtnRiskManager.Size = new System.Drawing.Size(125, 50);
+            this.rbtnRiskManager.Size = new System.Drawing.Size(125, 38);
             this.rbtnRiskManager.TabIndex = 1;
             this.rbtnRiskManager.Text = "리스크관리";
             this.rbtnRiskManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +89,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnLogin.Font = new System.Drawing.Font("Gulim", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogin.Location = new System.Drawing.Point(187, 109);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 38);
@@ -113,7 +114,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("굴림", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Gulim", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(4, 6);
             this.label1.Name = "label1";
@@ -125,8 +126,8 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.Red;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("HY견고딕", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnExit.Location = new System.Drawing.Point(264, -3);
+            this.btnExit.Font = new System.Drawing.Font("HYGothic-Extra", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnExit.Location = new System.Drawing.Point(263, -1);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(20, 20);
             this.btnExit.TabIndex = 8;
@@ -134,12 +135,29 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // rbtnPortManager
+            // 
+            this.rbtnPortManager.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbtnPortManager.BackColor = System.Drawing.Color.DimGray;
+            this.rbtnPortManager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.rbtnPortManager.Font = new System.Drawing.Font("NanumGothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rbtnPortManager.ForeColor = System.Drawing.Color.White;
+            this.rbtnPortManager.Location = new System.Drawing.Point(18, 29);
+            this.rbtnPortManager.Name = "rbtnPortManager";
+            this.rbtnPortManager.Size = new System.Drawing.Size(125, 38);
+            this.rbtnPortManager.TabIndex = 9;
+            this.rbtnPortManager.Text = "포트매니저";
+            this.rbtnPortManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbtnPortManager.UseVisualStyleBackColor = false;
+            this.rbtnPortManager.CheckedChanged += new System.EventHandler(this.rbtnPortManager_CheckedChanged);
+            // 
             // FormTFLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(282, 157);
+            this.Controls.Add(this.rbtnPortManager);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox1);
@@ -167,6 +185,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.RadioButton rbtnPortManager;
     }
 }
 

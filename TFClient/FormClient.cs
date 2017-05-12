@@ -1,45 +1,140 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TFobject;
 
 namespace TFClient
 {
     public partial class FormClient : Form
     {
-        public FormClient(int type)
+        private BalanceType _type;
+
+        private FormBalance _frmGroupBalance;
+        private FormBalance _frmAccBalance;
+
+        public FormClient(BalanceType type)
         {
             InitializeComponent();
 
-            if (type == 1)
+            _type = type;
+
+            InitControl();
+        }
+
+        private void InitControl()
+        {
+            if (_type == BalanceType.PORT)
+            {
+                this.Text = "포트매니저";
+                panel3.Location = new Point(0, 0);
+                panel1.Enabled = false;
+                panel2.Enabled = false;
+            }
+            else if (_type == BalanceType.FUND)
             {
                 this.Text = "펀드매니저";
-                panel1.Visible = true;
-                panel2.Visible = false;
+                panel1.Location = new Point(0, 0);
+                panel3.Enabled = false;
+                panel2.Enabled = false;
             }
-            else if (type == 2)
+            else if (_type == BalanceType.RISK)
             {
                 this.Text = "리스크매니저";
-                panel1.Visible = false;
-                panel2.Visible = true;
+                panel2.Location = new Point(0, 0);
+                panel1.Enabled = false;
+                panel3.Enabled = false;
             }
+
+            this.Size = new Size(350, 67);
         }
 
         private void btnFMBalance_Click(object sender, EventArgs e)
         {
-            FormFMBalance form = new FormFMBalance();
-            form.Show();
+            if (_frmGroupBalance == null || !_frmGroupBalance.Created)
+            {
+                _frmGroupBalance = new FormBalance(_type);
+                _frmGroupBalance.Show();
+            }
+            else
+            {
+                _frmGroupBalance.ViewForm();
+
+                _frmGroupBalance.Activate();
+                _frmGroupBalance.BringToFront();
+            }
+        }
+        
+        private void btnFMOrderList_Click(object sender, EventArgs e)
+        {
+
         }
 
-        private void btnOrder_Click(object sender, EventArgs e)
+        private void btnFMFilledList_Click(object sender, EventArgs e)
         {
-            FormOrder form = new FormOrder();
-            form.Show();
+
+        }
+
+        private void btnFMPerformance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRMMaintenance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRMFundBalance_Click(object sender, EventArgs e)
+        {
+            if (_frmGroupBalance == null || !_frmGroupBalance.Created)
+            {
+                _frmGroupBalance = new FormBalance(_type);
+                _frmGroupBalance.Show();
+            }
+            else
+            {
+                _frmGroupBalance.ViewForm();
+
+                _frmGroupBalance.Activate();
+                _frmGroupBalance.BringToFront();
+            }
+        }
+
+        private void btnRMPerformance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPMPortBalance_Click(object sender, EventArgs e)
+        {
+            if (_frmGroupBalance == null || !_frmGroupBalance.Created)
+            {
+                _frmGroupBalance = new FormBalance(_type);
+                _frmGroupBalance.Show();
+            }
+            else
+            {
+                _frmGroupBalance.ViewForm();
+
+                _frmGroupBalance.Activate();
+                _frmGroupBalance.BringToFront();
+            }
+        }
+
+        private void btnPMAccBalance_Click(object sender, EventArgs e)
+        {
+            if (_frmAccBalance == null || !_frmAccBalance.Created)
+            {
+                _frmAccBalance = new FormBalance(BalanceType.ACCOUNT);
+                _frmAccBalance.Show();
+            }
+            else
+            {
+                _frmAccBalance.ViewForm();
+
+                _frmAccBalance.Activate();
+                _frmAccBalance.BringToFront();
+            }
         }
     }
 }

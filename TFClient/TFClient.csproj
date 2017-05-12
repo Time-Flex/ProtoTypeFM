@@ -32,6 +32,46 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,11 +92,11 @@
     <Compile Include="FormClient.Designer.cs">
       <DependentUpon>FormClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormFMBalance.cs">
+    <Compile Include="FormBalance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFMBalance.Designer.cs">
-      <DependentUpon>FormFMBalance.cs</DependentUpon>
+    <Compile Include="FormBalance.Designer.cs">
+      <DependentUpon>FormBalance.cs</DependentUpon>
     </Compile>
     <Compile Include="FormOrder.cs">
       <SubType>Form</SubType>
@@ -69,8 +109,8 @@
     <EmbeddedResource Include="FormClient.resx">
       <DependentUpon>FormClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormFMBalance.resx">
-      <DependentUpon>FormFMBalance.cs</DependentUpon>
+    <EmbeddedResource Include="FormBalance.resx">
+      <DependentUpon>FormBalance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOrder.resx">
       <DependentUpon>FormOrder.cs</DependentUpon>
@@ -96,6 +136,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\bitbucket\tf_library\TFform\TFform.csproj">
+      <Project>{e169a98b-a81f-4743-9b96-b5addb9c331d}</Project>
+      <Name>TFform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bitbucket\tf_library\TFobject\TFobject.csproj">
+      <Project>{7e03fa1c-b2fe-4c1d-adf1-6d5a5cd02868}</Project>
+      <Name>TFobject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bitbucket\tf_library\TFsocket\TFsocket.csproj">
+      <Project>{a0bf0338-0588-4f8d-9e4c-69f1c9aed026}</Project>
+      <Name>TFsocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\bitbucket\tf_library\TFutil\TFutil.csproj">
+      <Project>{70cd8c69-394a-4404-96c5-132b9ed74279}</Project>
+      <Name>TFutil</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

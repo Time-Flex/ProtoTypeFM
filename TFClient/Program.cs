@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using TFobject;
 
 namespace TFClient
 {
@@ -18,7 +16,7 @@ namespace TFClient
             Application.SetCompatibleTextRenderingDefault(false);
 #if DEBUG
             // debug
-            Application.Run(new FormClient(1));
+            Application.Run(new FormClient(BalanceType.PORT));
 #else
             // release
             if (args.Length == 0)

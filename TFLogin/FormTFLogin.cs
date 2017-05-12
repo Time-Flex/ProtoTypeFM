@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using TFClient;
 
 namespace TFLogin
 {
@@ -23,6 +16,11 @@ namespace TFLogin
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void rbtnPortManager_CheckedChanged(object sender, EventArgs e)
+        {
+            rbtnPortManager.BackColor = rbtnPortManager.Checked ? Color.MediumPurple : Color.DimGray;
         }
 
         private void rbtnFundManager_CheckedChanged(object sender, EventArgs e)
@@ -41,7 +39,7 @@ namespace TFLogin
             //autoUpdater.Update();
             //Utils.DeleteOldFiles(Application.StartupPath + "\\" + program);
             
-            string type = rbtnFundManager.Checked ? "1" : (rbtnRiskManager.Checked ? "2" : "");
+            string type = rbtnPortManager.Checked ? "0" : (rbtnFundManager.Checked ? "1" : (rbtnRiskManager.Checked ? "2" : ""));
             //프로그램 실행
             Process process = new Process();
             //process.StartInfo.FileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory + program, program + ".exe");

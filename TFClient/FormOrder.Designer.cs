@@ -237,25 +237,25 @@
             this.lbPyraHoga = new System.Windows.Forms.Label();
             this.txtPHHogaStep = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rbSell = new System.Windows.Forms.RadioButton();
-            this.rbBuy = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSwapOrderStart = new System.Windows.Forms.Button();
             this.btnNormalOrderStart = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnSwapOrderCancel = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cbStockHistoryName = new System.Windows.Forms.ComboBox();
-            this.cbStockSearchName = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbStockName = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbStockName = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbStockHistoryName = new System.Windows.Forms.ComboBox();
+            this.cbStockSearchName = new System.Windows.Forms.ComboBox();
+            this.rbSell = new System.Windows.Forms.RadioButton();
+            this.rbBuy = new System.Windows.Forms.RadioButton();
+            this.btnSwapOrderStart = new System.Windows.Forms.Button();
+            this.btnSwapOrderCancel = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.gbOrderScenario.SuspendLayout();
@@ -278,8 +278,8 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -315,6 +315,8 @@
             // 
             // gbOrderScenario
             // 
+            this.gbOrderScenario.Controls.Add(this.rbSell);
+            this.gbOrderScenario.Controls.Add(this.rbBuy);
             this.gbOrderScenario.Controls.Add(this.tabOrderScenario);
             this.gbOrderScenario.Controls.Add(this.label16);
             this.gbOrderScenario.Controls.Add(this.label15);
@@ -387,7 +389,7 @@
             // lbSMExpOrderInterval
             // 
             this.lbSMExpOrderInterval.AutoSize = true;
-            this.lbSMExpOrderInterval.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSMExpOrderInterval.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbSMExpOrderInterval.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbSMExpOrderInterval.Location = new System.Drawing.Point(18, 198);
             this.lbSMExpOrderInterval.Name = "lbSMExpOrderInterval";
@@ -398,7 +400,7 @@
             // lbSMExpOrderTimes
             // 
             this.lbSMExpOrderTimes.AutoSize = true;
-            this.lbSMExpOrderTimes.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSMExpOrderTimes.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbSMExpOrderTimes.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbSMExpOrderTimes.Location = new System.Drawing.Point(18, 181);
             this.lbSMExpOrderTimes.Name = "lbSMExpOrderTimes";
@@ -521,7 +523,7 @@
             // lbExp30MinFS
             // 
             this.lbExp30MinFS.AutoSize = true;
-            this.lbExp30MinFS.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbExp30MinFS.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbExp30MinFS.ForeColor = System.Drawing.Color.Purple;
             this.lbExp30MinFS.Location = new System.Drawing.Point(251, 38);
             this.lbExp30MinFS.Name = "lbExp30MinFS";
@@ -567,7 +569,7 @@
             // lbSMExpOrderRate
             // 
             this.lbSMExpOrderRate.AutoSize = true;
-            this.lbSMExpOrderRate.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSMExpOrderRate.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbSMExpOrderRate.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbSMExpOrderRate.Location = new System.Drawing.Point(18, 80);
             this.lbSMExpOrderRate.Name = "lbSMExpOrderRate";
@@ -578,7 +580,7 @@
             // lbSMExpOrderTime
             // 
             this.lbSMExpOrderTime.AutoSize = true;
-            this.lbSMExpOrderTime.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSMExpOrderTime.Font = new System.Drawing.Font("Gulim", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbSMExpOrderTime.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lbSMExpOrderTime.Location = new System.Drawing.Point(18, 63);
             this.lbSMExpOrderTime.Name = "lbSMExpOrderTime";
@@ -2416,62 +2418,27 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.rbSell);
-            this.panel2.Controls.Add(this.rbBuy);
+            this.panel2.Controls.Add(this.btnSwapOrderCancel);
+            this.panel2.Controls.Add(this.btnSwapOrderStart);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(353, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(185, 24);
             this.panel2.TabIndex = 1;
             // 
-            // rbSell
-            // 
-            this.rbSell.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbSell.BackColor = System.Drawing.SystemColors.Control;
-            this.rbSell.Location = new System.Drawing.Point(51, 0);
-            this.rbSell.Name = "rbSell";
-            this.rbSell.Size = new System.Drawing.Size(50, 24);
-            this.rbSell.TabIndex = 48;
-            this.rbSell.Text = "매도";
-            this.rbSell.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbSell.UseVisualStyleBackColor = false;
-            // 
-            // rbBuy
-            // 
-            this.rbBuy.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbBuy.BackColor = System.Drawing.SystemColors.Control;
-            this.rbBuy.Location = new System.Drawing.Point(-1, 0);
-            this.rbBuy.Name = "rbBuy";
-            this.rbBuy.Size = new System.Drawing.Size(50, 24);
-            this.rbBuy.TabIndex = 47;
-            this.rbBuy.Text = "매수";
-            this.rbBuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbBuy.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnSwapOrderStart);
-            this.panel1.Controls.Add(this.btnNormalOrderStart);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.btnSwapOrderCancel);
+            this.panel1.Controls.Add(this.btnNormalOrderStart);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(344, 24);
             this.panel1.TabIndex = 0;
             // 
-            // btnSwapOrderStart
-            // 
-            this.btnSwapOrderStart.Location = new System.Drawing.Point(265, 0);
-            this.btnSwapOrderStart.Name = "btnSwapOrderStart";
-            this.btnSwapOrderStart.Size = new System.Drawing.Size(76, 24);
-            this.btnSwapOrderStart.TabIndex = 137;
-            this.btnSwapOrderStart.Text = "스왑매도";
-            this.btnSwapOrderStart.UseVisualStyleBackColor = true;
-            // 
             // btnNormalOrderStart
             // 
-            this.btnNormalOrderStart.Location = new System.Drawing.Point(186, 0);
+            this.btnNormalOrderStart.Location = new System.Drawing.Point(225, 0);
             this.btnNormalOrderStart.Name = "btnNormalOrderStart";
             this.btnNormalOrderStart.Size = new System.Drawing.Size(76, 24);
             this.btnNormalOrderStart.TabIndex = 136;
@@ -2483,17 +2450,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 20);
+            this.comboBox1.Size = new System.Drawing.Size(217, 20);
             this.comboBox1.TabIndex = 0;
-            // 
-            // btnSwapOrderCancel
-            // 
-            this.btnSwapOrderCancel.Location = new System.Drawing.Point(186, 0);
-            this.btnSwapOrderCancel.Name = "btnSwapOrderCancel";
-            this.btnSwapOrderCancel.Size = new System.Drawing.Size(76, 24);
-            this.btnSwapOrderCancel.TabIndex = 138;
-            this.btnSwapOrderCancel.Text = "스왑취소";
-            this.btnSwapOrderCancel.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -2509,61 +2467,6 @@
             this.panel5.Size = new System.Drawing.Size(535, 194);
             this.panel5.TabIndex = 4;
             // 
-            // cbStockHistoryName
-            // 
-            this.cbStockHistoryName.BackColor = System.Drawing.Color.White;
-            this.cbStockHistoryName.DropDownHeight = 100;
-            this.cbStockHistoryName.DropDownWidth = 150;
-            this.cbStockHistoryName.FormattingEnabled = true;
-            this.cbStockHistoryName.IntegralHeight = false;
-            this.cbStockHistoryName.Location = new System.Drawing.Point(3, 3);
-            this.cbStockHistoryName.MaxDropDownItems = 10;
-            this.cbStockHistoryName.Name = "cbStockHistoryName";
-            this.cbStockHistoryName.Size = new System.Drawing.Size(104, 20);
-            this.cbStockHistoryName.TabIndex = 140;
-            this.cbStockHistoryName.Visible = false;
-            // 
-            // cbStockSearchName
-            // 
-            this.cbStockSearchName.BackColor = System.Drawing.Color.LemonChiffon;
-            this.cbStockSearchName.DropDownHeight = 100;
-            this.cbStockSearchName.DropDownWidth = 150;
-            this.cbStockSearchName.FormattingEnabled = true;
-            this.cbStockSearchName.IntegralHeight = false;
-            this.cbStockSearchName.Location = new System.Drawing.Point(3, 3);
-            this.cbStockSearchName.MaxDropDownItems = 10;
-            this.cbStockSearchName.Name = "cbStockSearchName";
-            this.cbStockSearchName.Size = new System.Drawing.Size(104, 20);
-            this.cbStockSearchName.Sorted = true;
-            this.cbStockSearchName.TabIndex = 141;
-            this.cbStockSearchName.Visible = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(4, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(197, 168);
-            this.dataGridView1.TabIndex = 142;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "데이터";
-            this.Column1.Name = "Column1";
-            // 
-            // lbStockName
-            // 
-            this.lbStockName.AutoSize = true;
-            this.lbStockName.Location = new System.Drawing.Point(113, 7);
-            this.lbStockName.Name = "lbStockName";
-            this.lbStockName.Size = new System.Drawing.Size(29, 12);
-            this.lbStockName.TabIndex = 143;
-            this.lbStockName.Text = "종목";
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -2574,11 +2477,11 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView2.Location = new System.Drawing.Point(207, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(225, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(325, 191);
+            this.dataGridView2.Size = new System.Drawing.Size(307, 191);
             this.dataGridView2.TabIndex = 144;
             // 
             // Column2
@@ -2611,12 +2514,110 @@
             this.Column6.Name = "Column6";
             this.Column6.Width = 50;
             // 
+            // lbStockName
+            // 
+            this.lbStockName.AutoSize = true;
+            this.lbStockName.Location = new System.Drawing.Point(113, 7);
+            this.lbStockName.Name = "lbStockName";
+            this.lbStockName.Size = new System.Drawing.Size(29, 12);
+            this.lbStockName.TabIndex = 143;
+            this.lbStockName.Text = "종목";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
+            this.dataGridView1.Location = new System.Drawing.Point(1, 26);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(218, 168);
+            this.dataGridView1.TabIndex = 142;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "데이터";
+            this.Column1.Name = "Column1";
+            // 
+            // cbStockHistoryName
+            // 
+            this.cbStockHistoryName.BackColor = System.Drawing.Color.White;
+            this.cbStockHistoryName.DropDownHeight = 100;
+            this.cbStockHistoryName.DropDownWidth = 150;
+            this.cbStockHistoryName.FormattingEnabled = true;
+            this.cbStockHistoryName.IntegralHeight = false;
+            this.cbStockHistoryName.Location = new System.Drawing.Point(3, 3);
+            this.cbStockHistoryName.MaxDropDownItems = 10;
+            this.cbStockHistoryName.Name = "cbStockHistoryName";
+            this.cbStockHistoryName.Size = new System.Drawing.Size(104, 20);
+            this.cbStockHistoryName.TabIndex = 140;
+            this.cbStockHistoryName.Visible = false;
+            // 
+            // cbStockSearchName
+            // 
+            this.cbStockSearchName.BackColor = System.Drawing.Color.LemonChiffon;
+            this.cbStockSearchName.DropDownHeight = 100;
+            this.cbStockSearchName.DropDownWidth = 150;
+            this.cbStockSearchName.FormattingEnabled = true;
+            this.cbStockSearchName.IntegralHeight = false;
+            this.cbStockSearchName.Location = new System.Drawing.Point(3, 3);
+            this.cbStockSearchName.MaxDropDownItems = 10;
+            this.cbStockSearchName.Name = "cbStockSearchName";
+            this.cbStockSearchName.Size = new System.Drawing.Size(104, 20);
+            this.cbStockSearchName.Sorted = true;
+            this.cbStockSearchName.TabIndex = 141;
+            this.cbStockSearchName.Visible = false;
+            // 
+            // rbSell
+            // 
+            this.rbSell.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbSell.BackColor = System.Drawing.SystemColors.Control;
+            this.rbSell.Location = new System.Drawing.Point(83, 194);
+            this.rbSell.Name = "rbSell";
+            this.rbSell.Size = new System.Drawing.Size(71, 53);
+            this.rbSell.TabIndex = 135;
+            this.rbSell.Text = "매도";
+            this.rbSell.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbSell.UseVisualStyleBackColor = false;
+            // 
+            // rbBuy
+            // 
+            this.rbBuy.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbBuy.BackColor = System.Drawing.SystemColors.Control;
+            this.rbBuy.Location = new System.Drawing.Point(7, 194);
+            this.rbBuy.Name = "rbBuy";
+            this.rbBuy.Size = new System.Drawing.Size(71, 53);
+            this.rbBuy.TabIndex = 134;
+            this.rbBuy.Text = "매수";
+            this.rbBuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbBuy.UseVisualStyleBackColor = false;
+            // 
+            // btnSwapOrderStart
+            // 
+            this.btnSwapOrderStart.Location = new System.Drawing.Point(106, 0);
+            this.btnSwapOrderStart.Name = "btnSwapOrderStart";
+            this.btnSwapOrderStart.Size = new System.Drawing.Size(76, 24);
+            this.btnSwapOrderStart.TabIndex = 138;
+            this.btnSwapOrderStart.Text = "스왑매도";
+            this.btnSwapOrderStart.UseVisualStyleBackColor = true;
+            // 
+            // btnSwapOrderCancel
+            // 
+            this.btnSwapOrderCancel.Location = new System.Drawing.Point(30, 0);
+            this.btnSwapOrderCancel.Name = "btnSwapOrderCancel";
+            this.btnSwapOrderCancel.Size = new System.Drawing.Size(76, 24);
+            this.btnSwapOrderCancel.TabIndex = 139;
+            this.btnSwapOrderCancel.Text = "스왑취소";
+            this.btnSwapOrderCancel.UseVisualStyleBackColor = true;
+            // 
             // FormOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 625);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormOrder";
             this.Text = "시나리오주문";
@@ -2657,8 +2658,8 @@
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2669,8 +2670,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton rbSell;
-        private System.Windows.Forms.RadioButton rbBuy;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.GroupBox gbSignal;
@@ -2878,9 +2877,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtOrderMoney;
         private System.Windows.Forms.CheckBox cbxSignal;
-        private System.Windows.Forms.Button btnSwapOrderStart;
         private System.Windows.Forms.Button btnNormalOrderStart;
-        private System.Windows.Forms.Button btnSwapOrderCancel;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox cbStockHistoryName;
         private System.Windows.Forms.ComboBox cbStockSearchName;
@@ -2893,5 +2890,9 @@
         private System.Windows.Forms.Label lbStockName;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.RadioButton rbSell;
+        private System.Windows.Forms.RadioButton rbBuy;
+        private System.Windows.Forms.Button btnSwapOrderCancel;
+        private System.Windows.Forms.Button btnSwapOrderStart;
     }
 }
